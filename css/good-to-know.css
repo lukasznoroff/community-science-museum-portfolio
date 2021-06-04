@@ -1,0 +1,114 @@
+/*** good to know ***/
+
+header {
+  top: 0;
+}
+
+.good-to-know-section {
+  width: 50vw;
+  margin: auto;
+  height: 75vh;
+}
+
+.good-to-know-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px dotted rgb(53, 44, 44);
+}
+
+.good-to-know-boxes {
+  height: 30vh;
+  padding: 20px;
+  background-color: rgba(148, 149, 151, 0.384);
+}
+      
+.support-box {
+  border-right: 1px dotted rgb(53, 44, 44);
+  border-bottom: 1px dotted rgb(53, 44, 44);
+  animation: animation-opacity 2s both  .5s;
+  background-color: rgba(141, 22, 18, 0.384);
+}
+
+.volunteer-box {
+  animation: animation-opacity 2s both .8s;
+  background-color: rgba(13, 105, 17, 0.384);
+}
+
+.internships-box {
+  border-left: 1px dotted rgb(53, 44, 44);
+  border-top: 1px dotted rgb(53, 44, 44);
+  animation: animation-opacity 2s both 1s;
+  background-color: rgba(18, 57, 141, 0.384);
+}
+
+.food-box {
+  animation: animation-opacity 2s both  1.2s;
+}
+
+.good-to-know-header {
+  font-size: 2vw;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.good-to-know-headers {
+  font-size: 1vw;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.good-to-know-text {
+  font-size: .75vw;
+}
+
+.food {
+  line-height: 2;
+}
+
+@keyframes animation-opacity {
+  from{
+    opacity: 0;
+    transform: scale(-9);
+    background-color: rgba(36, 49, 170, 0.527);
+    transform: rotate(2deg);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+.good-to-know-section {
+  height: 100%;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.good-to-know-header {
+  font-size: 30px;
+}
+
+.good-to-know-wrapper {
+  display: block;
+}
+
+.good-to-know-boxes {
+   animation: none;
+   height: 50%;
+}
+
+.good-to-know-text {
+   font-size: 10px;
+}
+
+.good-to-know-headers {
+  font-size: 15px;
+}
+
+.food-box {
+  border-bottom: 1px dotted rgb(53, 44, 44);
+}
+  
+}

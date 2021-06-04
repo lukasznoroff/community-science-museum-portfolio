@@ -1,0 +1,312 @@
+/* explore */
+
+.explore-section {
+  width: 90vw;
+  display: flex;
+  margin: auto;
+}
+
+
+.explore-header-box {
+  width: 90vw;
+  margin: auto;
+}
+
+.explore-header {
+  color: var(--header-color);
+  font-size: 10vw;
+}
+
+.color-explore1 {
+  color: var(--explore-slide-color1);
+}
+
+.color-explore2 {
+  color: var(--explore-slide-color2);
+}
+
+.color-explore3 {
+  color: var(--explore-slide-color3);
+  
+}
+
+.explore-text {
+  font-size: .75vw;
+  line-height: 1.6;
+}
+
+.col-left-explore {
+  flex: 50%; 
+}
+
+.explore-heading {
+  font-size: 1.4vw;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--header-color);
+}
+
+.explore-box {
+  font-size: .8vw;
+  padding: 20px;
+  height: 33vh;
+  margin: 0;
+  max-width: 90%;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.explore-btn-box {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.explore-text-btn {
+  padding: 8px 25px;
+  font-size: 1vw;
+  background-color: var(--explore-btn-bgc);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 20px 0 0 auto;
+  text-decoration: none;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.explore-text-btn:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--explore-btn-bgc-hover);
+  color: var(--explore-btn-color-hover);
+  transition: all .7s ease;
+}
+
+.col-right-explor {
+  flex: 50%;
+  background-color: var(--col-right-explor);
+
+}
+
+.explor-singiel-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 33vh;
+  padding: 33px;
+}
+
+.explore-text-info {
+  font-size: .75vw;
+}
+
+
+/*** openinig hours ***/
+
+
+ol {
+  list-style-type: none;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  border-bottom: 10vw solid rgba(255, 0, 0, 0.274);
+  animation: expolre-animation-color 15s linear 0s infinite;
+  transition: 2s all;
+}
+
+
+/*** admission ****/
+
+.admission-box {
+  max-width: 15vw;
+}
+
+.circle {
+  width: 10vw;
+  height: 10vw;
+  background: rgba(117, 75, 75, 0.205);
+  border-radius: 50%;
+  animation: expolre-animation-colors  15s linear 0s infinite;
+ 
+}
+
+
+
+/*** location ***/
+
+.location-box {
+  max-width: 15vw;
+}
+
+.square {
+  width: 10vw;
+  height: 10vw;
+  background: rgba(94, 69, 69, 0.192);
+  animation: expolre-animation-colors  15s linear 0s infinite;
+}
+
+
+/*** triangle animation color ***/
+
+@keyframes expolre-animation-color {
+
+  25% {
+
+    border-bottom: 10vw solid rgba(255, 0, 0, 0.26);
+
+  }
+  50% {
+
+    border-bottom: 10vw solid rgba(46, 105, 87, 0.295);
+
+  }
+  75% {
+    border-bottom: 10vw solid rgba(46, 62, 105, 0.308);
+   
+
+  }
+  100% {
+
+    border-bottom: 10vw solid rgba(255, 0, 0, 0.274);
+
+  }
+}
+
+/*** square circle animation colors ***/
+
+@keyframes expolre-animation-colors {
+
+  25% {
+
+    background-color:rgba(255, 0, 0, 0.26);
+
+  }
+  50% {
+
+    background-color: rgba(46, 105, 87, 0.295);
+
+  }
+  75% {
+    background-color: rgba(46, 62, 105, 0.308);
+   
+
+  }
+  100% {
+
+    background-color: rgba(255, 0, 0, 0.274);
+
+  }
+}
+
+
+
+@media screen and (max-width: 800px){
+
+  .explore-header {
+    font-size: 50px;
+  }
+
+  .explore-heading {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+  }
+
+  .explore-header-box {
+   margin-bottom: 40px;
+  }
+
+  .explore-section {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .explore-text-btn {
+    font-size: 12px;
+  }
+
+
+  .explor-singiel-box {
+    padding: 5px;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .explore-text-info {
+    font-size: 9px;    
+  } 
+
+  .admission-box {
+    max-width: 70vw;
+    text-align: center;
+    height: 30%;
+  }
+
+  .explore-text-info {
+    font-size: 13px;
+  }
+
+  .explore-box {
+    align-self: center;
+    max-width: 200vw;
+    padding: 5px;
+    height: 50%;
+  }
+
+  .explore-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+  }
+
+  .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 200px 150px;
+  animation: none;
+  position: relative;
+  opacity: .4;
+  }
+
+  .admission-box {
+    width: 100%;
+    position: absolute;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    background: rgba(117, 75, 75, 0.205);
+    position: relative;
+    opacity: .4;
+  }
+
+  .location-box {
+    position: absolute;
+    min-width: 30vw;
+    height: 20%;
+    text-align: center;
+  }
+  
+  .square {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .explor-singiel-box {
+    margin-bottom: 60px;
+  }
+
+}

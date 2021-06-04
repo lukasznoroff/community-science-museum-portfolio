@@ -1,0 +1,254 @@
+/*** choose your space ***/
+
+header {
+  top: 0;
+}
+
+.wrap-contaier {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.exhibitions-header {
+  color: var(--white-color);
+  font-size: 5vw;  
+}
+
+.exhibitions-box {
+  width: 90vw;
+  height: 0;
+}
+
+.container {
+  display: flex;
+  width: 30vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2vw
+}
+
+.box0, .box10{
+  display: none;
+}
+
+.box0, .box10 {
+  background-color: var(--tile-color1);
+}
+
+.box1 {
+  background-color: var(--tile-color2);
+  border-radius: 50px 0 0 0;
+  pointer-events: none;
+}
+.box2 {
+  background-color: var(--tile-color3);
+  pointer-events: none;
+}
+.box3 {
+  background-color: var(--tile-color4); 
+  pointer-events: none;
+
+
+/*** links ***/
+
+}
+.box4 {
+  background-color: var(--tile-color4); 
+  animation: opacity 2s backwards;
+}
+
+.box4:hover {
+  background-image: url('/images/cosmology.jpg');
+
+}
+
+.box5, .box7 {
+  background-color: var(--tile-color5);
+}
+
+.box5:hover {
+  background-image: url('/images/evolution.jpg');
+ 
+}
+
+.box6, .box8 {
+  background-color: var(--tile-color3);
+}
+
+.box6:hover {
+  background-image: url('/images/biology-medicine4.jpg');
+}
+
+.box7:hover {
+  background-image: url('/images/ecology.jpg');
+}
+
+.box8:hover {
+  background-image: url('/images/robotics.jpg');
+}
+
+.box9 {
+  background-color: var(--tile-color4);
+  border-radius: 0 0 50px 0;
+}
+
+.img-def {
+  background-size: cover;
+}
+
+.animated-header1, .animated-header2, .animated-header3 {
+  animation: text-animation 2s  backwards; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+}
+.animated-header2 {
+  animation-delay: 1s;
+}
+.animated-header3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes text-animation {
+
+ 0%{
+    font-size: 7vw; 
+    /* transform: scale(7); */
+    transform-origin: 600px; 
+    color: transparent;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-in-square {
+  font-size: 1.2vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition: .5s ease-in-out; 
+}
+
+.text-in-square:hover {
+ opacity: .9;
+ transform: translate(0,20px);
+ color: var(--white-color);
+}
+
+.box:nth-child(2)  { 
+  animation: animation-loop 1s backwards;
+}
+
+.box:nth-child(3)  { 
+  animation: animation-loop 1.5s ease-out;
+}
+
+.box:nth-child(4)  { 
+  animation: animation-loop 2s ease-out;
+}
+
+.box:nth-child(5)  { 
+  opacity: 0;
+  animation: animation-loop 1.3s  forwards;
+  animation-delay: 2.6s;
+}
+
+.box:nth-child(6)  { 
+  opacity: 0;
+  animation: animation-loop 1.5s forwards;
+  animation-delay: 2.6s;
+
+}
+.box:nth-child(7)  { 
+  opacity: 0;
+  animation: animation-loop 2s  forwards;
+  animation-delay: 2.6s;
+}
+
+.box:nth-child(8) { 
+  opacity: 0;
+  animation: animation-loop 1s  forwards;
+  animation-delay: 3.8s;
+}
+
+.box:nth-child(9)  { 
+  opacity: 0;
+  animation: animation-loop 1.5s  forwards;
+  animation-delay: 3.8s;
+}
+
+.box:nth-child(10) { 
+  opacity: 0;
+  animation: animation-loop 2s  forwards;
+  animation-delay: 3.8s;
+}
+
+@keyframes animation-loop {
+  from{
+    transform: translate(40em);
+    border-radius: 90%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  .box:nth-child(n+5)  { 
+    animation-delay: 0s;
+  }
+
+  .wrap-contaier, .exhibitions-box {
+    height: auto;
+  }
+
+  .exhibitions-header {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .text-in-square-mobile {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .box1, .box2, .box3,  .box9 {
+    display: none;
+  }
+
+  .container {
+    width: 80vw;
+  }
+
+  .box {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .text-in-square {
+    font-size: 20px;
+    height: 100%;
+  }
+}
+

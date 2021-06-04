@@ -1,0 +1,36 @@
+/*** footer ***/
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  padding: 20px;
+  background-color: rgba(80, 99, 124, 0.486);
+}
+
+.footer-text {
+  color: var(--white-color);
+  font-size: 0.8vw;
+  margin-right: 1.3vw;
+}
+
+.social-media-icon {
+  padding: 10px;
+  font-size: 1vw;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+
+  .footer-text {
+    font-size: 11px;
+  }
+
+  .social-media-icon {
+   font-size: 14px;
+  }
+} 

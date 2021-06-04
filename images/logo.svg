@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="87" viewBox="0 0 480 87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+        font-size: 33px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-2 {
+        fill: #d04343;
+      }
+
+      .cls-3 {
+        fill: #385298;
+      }
+
+      .cls-4 {
+        fill: #178445;
+      }
+    </style>
+  </defs>
+  <g id="Group_634" data-name="Group 634" transform="translate(-140 -80)">
+    <text id="Community_Science_Museum" data-name="Community Science Museum" class="cls-1" transform="translate(185 112)"><tspan x="0" y="0">Community Science Museum</tspan></text>
+    <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-2" width="40" height="40" rx="8" transform="translate(140 80)"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-3" width="40" height="40" rx="8" transform="translate(186 127)"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-4" width="40" height="40" rx="8" transform="translate(140 127)"/>
+  </g>
+</svg>

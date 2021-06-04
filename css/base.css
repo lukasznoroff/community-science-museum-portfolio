@@ -1,0 +1,49 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --bg-header-color: rgb(235, 232, 232);
+  --links-color: rgb(245, 248, 248);
+  --bg-item-color:rgb(196, 193, 193);
+  --hover-color:rgb(199, 193, 193);
+  --main-menu-arrow-color: rgb(226, 21, 21);
+  --new-arrow-color: #385298;
+  --mobile-bg-color: rgb(110, 98, 98); 
+  --mobile-sub-menu-color: rgb(160, 160, 160);
+  --header-color: #123d64;
+  --explore-slide-color1: #a00;
+  --explore-slide-color2: #016001;
+  --explore-slide-color3: #2626d9;
+  --explore-btn-bgc: rgb(80, 99, 124);
+  --explore-btn-bgc-hover: rgb(80, 99, 124, 0.822);
+  --explore-btn-color-hover: rgba(4, 36, 139, 0.534);
+  --col-right-explor: rgba(148, 149, 151, 0.384);
+  --news-bgc: rgba(24, 28, 80, 0.055);
+  --news-col-right-bgc: #566d96;
+  --news-headers-bgc: #768296;
+  --shop-boxes-hover:  #28416b;
+  --tile-color1: rgb(41, 120, 185);
+  --tile-color2: #CEE5F2;
+  --tile-color3: #ACCBE1;
+  --tile-color4: #7C98B3;
+  --tile-color5: #CEE5F2;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--black-color);
+}
+
+body {
+  background-color: #aaa;
+  font-family: "Poppins", sans-serif;
+}

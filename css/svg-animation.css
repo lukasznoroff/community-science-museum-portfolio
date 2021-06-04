@@ -1,0 +1,155 @@
+/*** svg exhibition space animation ***/
+
+
+
+/*** major-tom cat animation ***/
+
+.cosmology {
+  margin: 10px;
+}
+
+#major-tom, #cat {
+  display: block;
+  animation: space 28s  infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes space {
+ 
+  to {
+    transform: scale(0);
+    
+  }
+}
+
+
+/*** evolution animation ***/
+
+.evolution-animation {
+  margin: 10px;
+}
+
+#wheel, #wheel3 {
+  
+  animation: wheels 28s  infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheels {
+ 
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+#wheel2 {
+  animation: wheels2 28s  infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheels2 {
+ 
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+
+/*** biology medicine animation ***/
+
+.medicine {
+  margin: 10px;
+}
+
+#heart{
+  animation: ekg .7s  infinite alternate;
+  transform-origin: center;
+  
+}
+
+@keyframes ekg {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }     
+}  
+  
+ 
+
+  /*** robotics ai animation ***/
+
+.robot {
+  margin: 10px;
+  padding: 22px;
+}
+
+#vector, #vector_2 {
+  display: none;
+}
+
+#robot {
+  animation: move 7s  infinite alternate;
+}
+
+@keyframes move {
+
+
+  to{
+   transform: translate(300px);
+  }     
+   
+ }
+
+
+#robot-head {
+  animation: twist 3s  infinite both;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: twist 3s steps(99, start) infinite forwards;
+}
+
+
+
+@keyframes twist {
+
+
+  to{
+    transform: rotate(360deg);
+  }     
+}
+
+
+  /*** ecology animation ***/
+
+.ecology {
+  margin: 10px;
+  padding: 10px;
+}
+
+#leaf1 {
+  animation: leaf-down 8s  infinite both;
+}
+
+#leaf2 {
+  animation: leaf-down 7s  infinite both 3s;
+}
+
+#leaf3 {
+  animation: leaf-down 6s  infinite both 5s;
+}
+
+
+@keyframes leaf-down {
+ 
+  to {
+    transform: translateY(500px);
+    opacity: 0;
+    
+  }
+}
+

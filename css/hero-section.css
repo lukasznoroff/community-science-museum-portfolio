@@ -1,0 +1,145 @@
+/*** hero section ***/
+
+.hero-section {
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+}
+
+.col-left-hero  {
+  flex: 1 1 20vw;
+  height: 100vh;
+}
+
+.hero-svg-animation {
+  width: 85%;
+  height: 100%;
+}
+  
+.col-right-hero {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.about-museum-header {
+  font-size: 2vw;
+  margin-bottom: 3vw;
+  color: var(--header-color);
+}
+
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  height: 85vh;
+  justify-content: center;
+}
+
+.about-text {
+  font-size: 0.75vw;
+  line-height: 1.8;
+  max-width: 35vw;
+}
+
+#planet2, #planet3 {
+  display: block;
+  animation: circle 48s  infinite linear;
+  transform-origin: center;
+  opacity: .7;
+}
+
+#star1, #star2, #star3, #star4 {
+  animation: flashing 4s  infinite alternate 4s;
+}
+ #star2 {
+   animation-delay: 6s;
+ }
+
+ #star3 {
+   animation-delay: 10s;
+ }
+
+ #star4 {
+   animation-delay: 16s;
+ }
+
+
+
+/*** planet animation ***/
+
+@keyframes circle {
+ 
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*** stars animation ***/
+
+@keyframes flashing {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 800px){
+  
+  .hero-section {
+    flex-direction: column-reverse; 
+    height: auto; 
+  }
+
+  .header-image-box {
+    display: block;
+    height: 80vh;
+  }
+
+  .col-right-hero {
+    flex: 0;
+    height: 100vh;
+  }
+
+  .explore-text {
+    font-size: 12px;
+  }
+
+  .col-left-hero {
+    flex: 0;
+  }
+
+  .about-museum-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 13px;
+    max-width: 100%;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  .col-explore-left {
+    height: auto;
+  }
+
+  .news-header {
+    font-size: 20px;
+
+  }
+
+  .col-right-hero {
+    margin-top: 30px;
+  }
+}
+      
+    
+ 
